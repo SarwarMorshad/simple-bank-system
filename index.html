@@ -5,9 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Tailwind Css Script -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Your Bank</title>
   </head>
   <body>
-    <h1 class="text-5xl">Welcome to Your Bank</h1>
+    <header>
+      <h1 class="text-3xl text-center">Welcome to<span class="font-semibold">Future Bank</span></h1>
+    </header>
+    <main>
+      <section class="w-9/12 bg-slate-300 mx-auto mt-8 p-8 text-center">
+        <h3 class="mb-4 font-sans text-xl font-medium text-lime-700">Please login</h3>
+        <div class="flex flex-col justify-center items-center mb-5">
+          <input
+            type="email"
+            placeholder="Enter Your Password"
+            class="input input-bordered input-accent w-full max-w-xs mb-3"
+          />
+          <input
+            type="password"
+            placeholder="Enter Your Password"
+            class="input input-bordered input-accent w-full max-w-xs"
+          />
+        </div>
+        <div>
+          <button id="submit" class="btn btn-success sm:btn-sm md:btn-md lg:btn-md hover:bg-sky-700">
+            Submit
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="js/login.js"></script>
   </body>
 </html>
